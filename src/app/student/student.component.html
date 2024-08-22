@@ -10,4 +10,27 @@
             <button mat-button class="button">Teacher</button>
         </div>
     </nav>
+    <div class="card">
+        <div class="example-card" appearance="outlined" *ngFor="let students of studentsList">
+          <mat-card-header>
+            <mat-card-title>
+              <h2>{{students.name}}</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="content">
+            <p>{{students.email}}</p>
+          </mat-card-content>
+          <mat-card-content class="content">
+            <p>{{students.address}}</p>
+          </mat-card-content>
+          <mat-card-content class="content">
+            <p>{{students.role}}</p>
+          </mat-card-content>
+          <mat-card-footer class="example-card-footer">
+            <button class="but">Edit</button>
+            <button class="but">Delete</button>
+            <button class="but">Hide</button>
+          </mat-card-footer>
+        </div>
+      </div>
 </body>

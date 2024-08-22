@@ -11,6 +11,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { StudentComponent } from './student/student.component';
 import { TeacherComponent } from './teacher/teacher.component'; 
+import { MatCard, MatCardModule} from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -27,9 +30,11 @@ import { TeacherComponent } from './teacher/teacher.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatRadioModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
