@@ -1,3 +1,4 @@
+
 .header {
     height: 60px;
     background-color: pink;
@@ -10,7 +11,7 @@
 }
 
 .body {
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: 460px;
     border-style: groove;
     border-radius: 0.6rem;
@@ -42,24 +43,37 @@
 
 .err-1 {
     position: fixed;
-    top: 305px;
+    top: 265px;
     left: 498px;
     color: red
 }
 .err-2 {
     @extend .err-1;
-    top: 394px;
+    top: 354px;
 }
 .err-3 {
     @extend .err-1;
-    top: 483px;
+    top: 440px;
+}
+.err-4 {
+    @extend .err-1;
+    top: 429px;
 }
 .radio-par{
     display: flex;
 }
-.label-1 {
+.label-2 {
     margin-top: 10px;
+    margin-left: 240px;
 }
 .example-margin-1{
     margin-left: 20px;
+}
+.button{
+    cursor: pointer;
+    height: 30px;
+}
+.label-1{
+    margin-top: 10px;
+    margin-right: 10px;
 }

@@ -1,11 +1,11 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "John Doe",
-        "email": "john@example.com",
-        "address": "123 Main St",
-        "role": "Student"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": "c6a5",
+      "name": "Priyesh",
+      "email": "priyesh@xyz.com",
+      "address": "Hyderabad",
+      "role": "Student"
+    }
+  ]
+}

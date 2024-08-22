@@ -14,22 +14,20 @@
         <div class="example-card" appearance="outlined" *ngFor="let teachers of teachersList">
           <mat-card-header>
             <mat-card-title>
-              <h2>{{teachers.name}}</h2>
+              <h2 class="heading">{{teachers.name}}</h2>
             </mat-card-title>
           </mat-card-header>
           <mat-card-content class="content">
-            <p>{{teachers.email}}</p>
+          <div style="display: flex;"> <span><b>email:</b></span> <p class="card-content">{{teachers.email}}</p></div>
           </mat-card-content>
           <mat-card-content class="content">
-            <p>{{teachers.address}}</p>
+            <div style="display: flex;">  <span><b>Address:</b></span><p class="card-content">{{teachers.address}}</p></div>
           </mat-card-content>
           <mat-card-content class="content">
-            <p>{{teachers.role}}</p>
+           <div style="display: flex;"> <span><b>Role:</b></span><p class="card-content">{{teachers.role}}</p></div>
           </mat-card-content>
           <mat-card-footer class="example-card-footer">
-            <button class="but">Edit</button>
             <button class="but">Delete</button>
-            <button class="but">Hide</button>
           </mat-card-footer>
         </div>
       </div>

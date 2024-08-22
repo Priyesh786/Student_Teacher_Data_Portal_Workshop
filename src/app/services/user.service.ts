@@ -18,5 +18,11 @@ export class UserService {
   getTeachers() : any {
     return this.http.get(this.apiURL2);
   }
+  addStudents(user: any): Observable<any> {
+    return this.http.post(this.apiURL1, user);
+  }
+  addTeachers(user: any): Observable<any> {
+    return this.http.post(this.apiURL2, user);
+  }
 
 }

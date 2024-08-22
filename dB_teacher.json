@@ -1,18 +1,11 @@
 {
-    "users": [
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "email": "jane@example.com",
-        "address": "456 Elm St",
-        "role": "Teacher"
-      },
-      {
-        "id": 3,
-        "name": "Dwayne Bravo",
-        "email": "bravo@example.com",
-        "address": "456 Elm St",
-        "role": "Teacher"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": "7f23",
+      "name": "Krishna",
+      "email": "kr@abc.com",
+      "address": "Tata",
+      "role": "Teacher"
+    }
+  ]
+}

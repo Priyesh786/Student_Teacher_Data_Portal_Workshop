@@ -4,8 +4,8 @@
     </nav>
     <div class="body">
         <h2 class="reg">Registration Form</h2>
-        <form [formGroup]="myForm">
-            <div class="fillForm">
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <div class="fillForm" >
                 <mat-form-field class="label" appearance="outline" color=primary>
                     <mat-label> Name</mat-label>
                     <input matInput formControlName="name">
@@ -24,19 +24,22 @@
                 </div>
                 <mat-form-field class="label" appearance="outline" color=primary>
                     <mat-label>Address</mat-label>
-                    <input matInput formControlName="add">
+                    <input matInput formControlName="address">
                 </mat-form-field>
                 <div class="err-3"
-                    *ngIf="myForm.get('add')?.invalid && (myForm.get('add')?.dirty || myForm.get('add')?.touched)">
+                    *ngIf="myForm.get('address')?.invalid && (myForm.get('address')?.dirty || myForm.get('address')?.touched)">
                     Please provide a valid address.
                 </div>
                 <div class="radio-par">
-                <label class="label-1">Role:</label>
-                <div class="radio"> 
-                    <mat-radio-button class="example-margin" value="after">Student</mat-radio-button>
-                    <mat-radio-button class="example-margin-1" value="after">Teacher</mat-radio-button>
+                    <label class="label-1"><b>Role:</b></label>
+                        <mat-radio-group formControlName="role">
+                            <mat-radio-button class="example-margin" value="Student">Student</mat-radio-button>
+                            <mat-radio-button class="example-margin-1" value="Teacher">Teacher</mat-radio-button>
+                        </mat-radio-group>
                 </div>
-            </div>
+                <div class="label-2">
+                    <button mat-button class="button" type="submit">Submit</button>
+                </div>
             </div>
         </form>
     </div>

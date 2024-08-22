@@ -1,5 +1,5 @@
 <body>
-    <nav class="header">
+      <nav class="header">
         <h1 class="heading">Student Data Portal</h1>
         <div class="search">
             <img class='search-icon' src='../../assets/image.png' alt="none">
@@ -14,22 +14,20 @@
         <div class="example-card" appearance="outlined" *ngFor="let students of studentsList">
           <mat-card-header>
             <mat-card-title>
-              <h2>{{students.name}}</h2>
+              <h2 class="heading-1">{{students.name}}</h2>
             </mat-card-title>
           </mat-card-header>
           <mat-card-content class="content">
-            <p>{{students.email}}</p>
+          <div style="display: flex;"> <span><b>email:</b></span> <p class="card-content">{{students.email}}</p></div>
           </mat-card-content>
           <mat-card-content class="content">
-            <p>{{students.address}}</p>
+            <div style="display: flex;">  <span><b>Address:</b></span><p class="card-content">{{students.address}}</p></div>
           </mat-card-content>
           <mat-card-content class="content">
-            <p>{{students.role}}</p>
+           <div style="display: flex;"> <span><b>Role:</b></span><p class="card-content">{{students.role}}</p></div>
           </mat-card-content>
           <mat-card-footer class="example-card-footer">
-            <button class="but">Edit</button>
-            <button class="but">Delete</button>
-            <button class="but">Hide</button>
+            <button class="but" (click)="deleteUser(students.id)">Delete</button>
           </mat-card-footer>
         </div>
       </div>

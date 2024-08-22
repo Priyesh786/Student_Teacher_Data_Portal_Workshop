@@ -7,18 +7,17 @@ import { TeacherComponent } from './teacher/teacher.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:DetailsComponent
+    path: '',
+    component: DetailsComponent,
   },
   {
     path: 'home/student',
-    component:StudentComponent
+    component: StudentComponent
   },
   {
     path: 'home/teacher',
-    component:TeacherComponent
+    component: TeacherComponent
   }
-  
 ];
 
 @NgModule({
