@@ -6,8 +6,8 @@
             <input class="search-bar" type="text" placeholder="Search">
         </div>
         <div class="buttons">
-            <button mat-button class="button">Student</button>
-            <button mat-button class="button">Teacher</button>
+            <button mat-button class="button" [routerLink]="['/home/student']">Student</button>
+            <button mat-button class="button" [routerLink]="['/home/teacher']">Teacher</button>
         </div>
     </nav>
     <div class="card">
@@ -27,7 +27,7 @@
            <div style="display: flex;"> <span><b>Role:</b></span><p class="card-content">{{students.role}}</p></div>
           </mat-card-content>
           <mat-card-footer class="example-card-footer">
-            <button class="but" (click)="deleteUser(students.id)">Delete</button>
+            <button class="but" (click)="deleteStudent(students.id)">Delete</button>
           </mat-card-footer>
         </div>
       </div>

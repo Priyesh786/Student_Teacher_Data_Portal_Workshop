@@ -24,5 +24,11 @@ export class UserService {
   addTeachers(user: any): Observable<any> {
     return this.http.post(this.apiURL2, user);
   }
+  deleteStudents(id: number): Observable<any> {
+    return this.http.delete(`${this.apiURL1}/${id}`);
+  }
+  deleteTeachers(id: number): Observable<any> {
+    return this.http.delete(`${this.apiURL2}/${id}`);
+  }
 
 }

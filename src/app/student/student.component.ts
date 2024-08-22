@@ -16,9 +16,17 @@ export class StudentComponent {
       }, error: (e:any) => {
         console.log("error", e);
       }
-
    })
   }
-
+  deleteStudent(id:number):void {
+    this.httpService.deleteStudents(id).subscribe({
+      next : (res:any) => {
+        console.log("Student successfully deleted.");
+        window.location.href = 'home/student'
+      }, error : (e:any)=>{
+        console.log("Error in deleting", e);
+      }
+    })
+  }
 }
 

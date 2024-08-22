@@ -19,4 +19,14 @@ export class TeacherComponent {
       }
    })
   }
+  deleteTeacher(id:number):void {
+    this.httpService.deleteTeachers(id).subscribe({
+      next : (res:any) => {
+        console.log("Teacher successfully deleted.");
+        window.location.href = 'home/teacher'
+      }, error : (e:any)=>{
+        console.log("Error in deleting", e);
+      }
+    })
+  }
 }

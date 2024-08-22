@@ -1,11 +1,3 @@
 {
-  "users": [
-    {
-      "id": "7f23",
-      "name": "Krishna",
-      "email": "kr@abc.com",
-      "address": "Tata",
-      "role": "Teacher"
-    }
-  ]
+  "users": []
 }
