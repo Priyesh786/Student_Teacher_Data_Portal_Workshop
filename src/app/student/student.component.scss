@@ -1,0 +1,45 @@
+.header {
+    height: 60px;
+    background-color: pink;
+    display: flex;
+}
+
+.heading {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.search{
+    border: none;    
+    background-color: rgb(255, 255, 255);
+    margin-left: 70px;
+    margin-top: 3px;
+    height: 43px;
+    width: 520px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.search-icon{
+    height: 30px;
+    width: 30px;
+}
+.search-bar{
+    height: 30px;
+    width: 470px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: medium;
+    outline: none;
+}
+.button {
+    height: 30px;
+    width: 70px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.buttons{
+    margin-left: 140px;
+    margin-top: 15px;
+}

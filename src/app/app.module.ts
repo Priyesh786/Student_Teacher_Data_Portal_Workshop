@@ -8,13 +8,18 @@ import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input'; 
+import { MatInputModule } from '@angular/material/input';
+import { StudentComponent } from './student/student.component';
+import { TeacherComponent } from './teacher/teacher.component'; 
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailsComponent
+    DetailsComponent,
+    StudentComponent,
+    TeacherComponent
   ],
   imports: [
     BrowserModule,
