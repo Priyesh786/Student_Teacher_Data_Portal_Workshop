@@ -1,0 +1,43 @@
+<body>
+    <nav class="header">
+        <h1 class="heading">Student Teacher Data Portal</h1>
+    </nav>
+    <div class="body">
+        <h2 class="reg">Registration Form</h2>
+        <form [formGroup]="myForm">
+            <div class="fillForm">
+                <mat-form-field class="label" appearance="outline" color=primary>
+                    <mat-label> Name</mat-label>
+                    <input matInput formControlName="name">
+                </mat-form-field>
+                <div class="err-1"
+                    *ngIf="myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)">
+                    Please provide a valid name.
+                </div>
+                <mat-form-field class="label" appearance="outline" color=primary>
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email">
+                </mat-form-field>
+                <div class="err-2"
+                    *ngIf="myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)">
+                    Please provide a valid email.
+                </div>
+                <mat-form-field class="label" appearance="outline" color=primary>
+                    <mat-label>Address</mat-label>
+                    <input matInput formControlName="add">
+                </mat-form-field>
+                <div class="err-3"
+                    *ngIf="myForm.get('add')?.invalid && (myForm.get('add')?.dirty || myForm.get('add')?.touched)">
+                    Please provide a valid address.
+                </div>
+                <div class="radio-par">
+                <label class="label-1">Role:</label>
+                <div class="radio"> 
+                    <mat-radio-button class="example-margin" value="after">Student</mat-radio-button>
+                    <mat-radio-button class="example-margin-1" value="after">Teacher</mat-radio-button>
+                </div>
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
