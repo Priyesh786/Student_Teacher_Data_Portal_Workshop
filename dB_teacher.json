@@ -13,6 +13,27 @@
       "email": "binod@poi.com",
       "address": "Delhi",
       "role": "Teacher"
+    },
+    {
+      "id": "88e3",
+      "name": "Kajal",
+      "email": "kajal@xyz.com",
+      "address": "Bangalore",
+      "role": "Teacher"
+    },
+    {
+      "id": "9423",
+      "name": "Yuvraj ",
+      "email": "yuvraj@gmail.com",
+      "address": "Punjab",
+      "role": "Teacher"
+    },
+    {
+      "id": "12c9",
+      "name": "Kiran",
+      "email": "kiran@lko.com",
+      "address": "UP",
+      "role": "Teacher"
     }
   ]
 }

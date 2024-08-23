@@ -20,6 +20,27 @@
       "email": "james@google.com",
       "address": "USA",
       "role": "Student"
+    },
+    {
+      "id": "bf6a",
+      "name": "Smith",
+      "email": "smith@gmail.com",
+      "address": "America",
+      "role": "Student"
+    },
+    {
+      "id": "8069",
+      "name": "Amit",
+      "email": "amit@dfg.com",
+      "address": "J&K",
+      "role": "Student"
+    },
+    {
+      "id": "def8",
+      "name": "Abhishek",
+      "email": "abhishek@poi.com",
+      "address": "Jharkhand",
+      "role": "Student"
     }
   ]
 }

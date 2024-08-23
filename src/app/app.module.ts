@@ -15,6 +15,7 @@ import { MatCard, MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchPipe } from './pipe/search.pipe';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -30,6 +31,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    MatSnackBarModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
