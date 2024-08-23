@@ -1,5 +1,5 @@
 <body>
-      <nav class="header">
+    <mat-toolbar class="header">  <nav class="header">
         <h1 class="heading">Student Data Portal</h1>
         <div class="search">
             <img class='search-icon' src='../../assets/image.png' alt="none">
@@ -10,7 +10,7 @@
             <button mat-button class="button" [routerLink]="['/teacher']">Teacher</button>
         </div>
         <div><img class="close" src="../../assets/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" [routerLink]="['']"></div>
-    </nav>
+    </nav> </mat-toolbar>
     <div class="card">
         <div class="example-card" appearance="outlined" *ngFor="let students of studentsList | search: searchData">
           <mat-card-header>

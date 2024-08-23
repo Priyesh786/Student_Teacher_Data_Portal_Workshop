@@ -8,10 +8,17 @@
       "role": "Student"
     },
     {
-      "id": "ffe3",
-      "name": "Amba",
-      "email": "amba@abc.com",
-      "address": "Delhi",
+      "id": "852e",
+      "name": "Shivam",
+      "email": "shivam@abc.com",
+      "address": "Ranchi",
+      "role": "Student"
+    },
+    {
+      "id": "b798",
+      "name": "James",
+      "email": "james@google.com",
+      "address": "USA",
       "role": "Student"
     }
   ]

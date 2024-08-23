@@ -14,6 +14,7 @@ import { TeacherComponent } from './teacher/teacher.component';
 import { MatCard, MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchPipe } from './pipe/search.pipe';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 
@@ -35,7 +36,8 @@ import { SearchPipe } from './pipe/search.pipe';
     MatRadioModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

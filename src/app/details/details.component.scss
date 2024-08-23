@@ -20,7 +20,7 @@
 }
 
 .reg {
-    margin-left: 90px;
+    margin-left: 80px;
     padding-top: 10px;
 }
 
@@ -34,7 +34,8 @@
 
 .label {
     margin-top: 10px;
-    width: 300px;
+    width: auto;
+    margin-right: 20px;
 }
 
 .radio {
@@ -65,7 +66,7 @@
 }
 .label-2 {
     margin-top: 10px;
-    margin-left: 240px;
+    margin-left: 75%;
 }
 .example-margin-1{
     margin-left: 20px;
@@ -86,6 +87,99 @@
     margin-right: 10px;
 }
 .buttons{
-    margin-left: 665.3px;
+    margin-left: 54%;
     margin-top: 15px;
 }
+// @media (max-width: 12000px) {
+//     .body {
+//         margin-top: 60px;
+//         margin-left: 50%;
+//         border-style: groove;
+//         border-radius: 0.6rem;
+//         margin-right: 40%;
+//     }
+//     .label-2{
+//         margin-left: 70%;
+//     }
+//     .reg{
+//         margin-left: 20%;
+//     }
+// }
+@media (max-width: 1200px) {
+    .body {
+        margin-top: 60px;
+        margin-left: 35%;
+        border-style: groove;
+        border-radius: 0.6rem;
+        margin-right: 25%;
+    }
+    .label-2{
+        margin-left: 70%;
+    }
+    .reg{
+        margin-left: 20%;
+    }
+    .buttons {
+        margin-left: 32%;
+    }
+}
+@media (max-width: 800px) {
+    .body {
+        margin-top: 60px;
+        margin-left: 20%;
+        border-style: groove;
+        border-radius: 0.6rem;
+        margin-right: 20%;
+    }
+    .radio-par{
+        display: flex;
+        flex-direction: column;
+      }
+      .button-1{
+        margin-left: -30px;
+      }
+      .buttons {
+        margin-left: 1%;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  .reg {
+    margin-left: 10px;
+  }
+  .radio-par{
+    display: flex;
+    flex-direction: column;
+  }
+    .heading {
+      padding-top: 10px;
+      padding-left: 0;
+      text-align: center;
+    }
+   
+    .body {
+        margin-top: 60px;
+        margin-left: 10%;
+        border-style: groove;
+        border-radius: 0.6rem;
+        margin-right: 10%;
+    }
+  
+    .label {
+      width: 100%;
+    }
+  
+    .label-2 {
+      margin-left: -30px;
+      text-align: center;
+    }
+  
+    .buttons {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+    }
+  }

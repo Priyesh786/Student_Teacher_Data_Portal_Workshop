@@ -13,7 +13,7 @@ export class SearchPipe implements PipeTransform {
       return data;
     }
     search = search.toLowerCase();
-    return data.filter((val:any)=>val.name.toLowerCase().includes(search) || val.email.toLowerCase().includes(search));
+    return data.filter((val:any)=>val.name.toLowerCase().includes(search) || val.email.toLowerCase().includes(search) || val.address.toLowerCase().includes(search));
   }
 
 }

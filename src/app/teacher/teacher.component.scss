@@ -79,7 +79,7 @@
 }
 
 .card{
-    margin-left: 50px;
+    margin-left: 167px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -99,6 +99,9 @@
     overflow-x: auto;
     background-color: rgb(252, 161, 176);
 }
+.buttons[_ngcontent-ng-c453310536]{
+    margin-top: 12px;
+}
 .card-content {
     margin-left: 10px;
 }
@@ -108,6 +111,55 @@
 .but {
     cursor: pointer;
 }
+@media (max-width: 1000px) {
+    .search{
+        border: none;    
+        background-color: rgb(255, 255, 255);
+        margin-left: 60px;
+        margin-top: 3px;
+        height: 43px;
+        width: 33%;
+        display: flex;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+    .search-bar{
+        height: 30px;
+        width: 270px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        font-size: medium;
+        outline: none;
+    }
+}
+::ng-deep .mat-toolbar mat-toolbar-single-row {
+    padding-left: -0px;
+}
+@media (max-width: 800px) {
+    .search{
+        border: none;    
+        background-color: rgb(255, 255, 255);
+        margin-left: 60px;
+        margin-top: 3px;
+        height: 43px;
+        width: 30%;
+        display: flex;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+    .search-bar{
+        height: 30px;
+        width: 70px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        font-size: medium;
+        outline: none;
+    }
+}
+
+
 
 
 
