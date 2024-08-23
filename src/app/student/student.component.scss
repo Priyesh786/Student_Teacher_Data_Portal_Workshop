@@ -49,4 +49,60 @@
     margin-left: 140px;
     margin-top: 15px;
 }
+.close {
+    @extend .search-icon;
+    margin-left: 45px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.close:hover{
+    background-color: palevioletred;
+    border-radius: 10rem;
+}
+.close:active {
+    background-color: rgb(144, 125, 125);
+}
+.heading {
+    padding-top: 15px;
+    margin-left: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.heading-1{
+    @extend .heading;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.card{
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;   
+}
+.example-card{
+    border: 1.5px groove;
+    border-radius: 0.5rem;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    height:max-content;
+    padding-bottom: 15px;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: rgb(252, 161, 176);
+}
+.card-content {
+    margin-left: 10px;
+}
+.example-card-footer{
+    margin-left: 100px;
+}
+.but {
+    cursor: pointer;
+}
+
 

@@ -1,10 +1,17 @@
 {
   "users": [
     {
-      "id": "62d6",
-      "name": "ABC",
-      "email": "abc@cba.com",
-      "address": "jhs",
+      "id": "b129",
+      "name": "Priyesh Anand",
+      "email": "priyesh.anand@godigit.com",
+      "address": "Hyderabad",
+      "role": "Student"
+    },
+    {
+      "id": "ffe3",
+      "name": "Amba",
+      "email": "amba@abc.com",
+      "address": "Delhi",
       "role": "Student"
     }
   ]

@@ -3,12 +3,33 @@
         <h1 class="heading">Teacher Data Portal</h1>
         <div class="search">
             <img class='search-icon' src='../../assets/image.png' alt="none">
-            <input class="search-bar" type="text" placeholder="Search">
+            <input class="search-bar" type="text" placeholder="Search" [(ngModel)]="searchData">
         </div>
         <div class="buttons">
-            <button mat-button class="button" [routerLink]="['/student/student-details']">Student</button>
-            <button mat-button class="button" [routerLink]="['/teacher/teacher-details']">Teacher</button>
+            <button mat-button class="button" [routerLink]="['/student']">Student</button>
+            <button mat-button class="button" [routerLink]="['/teacher']">Teacher</button>
         </div>
+        <div><img class="close" src="../../assets/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" [routerLink]="['']"></div>
     </nav>
-    <router-outlet></router-outlet>
+    <div class="card">
+      <div class="example-card" appearance="outlined" *ngFor="let teachers of teachersList | search: searchData">
+        <mat-card-header>
+          <mat-card-title>
+            <h2 class="head">{{teachers.name}}</h2>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="content">
+        <div style="display: flex;"> <span><b>email:</b></span> <p class="card-content">{{teachers.email}}</p></div>
+        </mat-card-content>
+        <mat-card-content class="content">
+          <div style="display: flex;">  <span><b>Address:</b></span><p class="card-content">{{teachers.address}}</p></div>
+        </mat-card-content>
+        <mat-card-content class="content">
+         <div style="display: flex;"> <span><b>Role:</b></span><p class="card-content">{{teachers.role}}</p></div>
+        </mat-card-content>
+        <mat-card-footer class="example-card-footer">
+          <button class="but" (click)="deleteTeacher(teachers.id)">Delete</button>
+        </mat-card-footer>
+      </div>
+    </div>
 </body>

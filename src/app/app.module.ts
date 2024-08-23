@@ -13,9 +13,7 @@ import { StudentComponent } from './student/student.component';
 import { TeacherComponent } from './teacher/teacher.component'; 
 import { MatCard, MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
-import { StudentDetailsComponent } from './student-details/student-details.component';
-import { TeacherDetailsComponent } from './teacher-details/teacher-details.component';
-
+import { SearchPipe } from './pipe/search.pipe';
 
 
 
@@ -25,8 +23,7 @@ import { TeacherDetailsComponent } from './teacher-details/teacher-details.compo
     DetailsComponent,
     StudentComponent,
     TeacherComponent,
-    StudentDetailsComponent,
-    TeacherDetailsComponent
+    SearchPipe,
   ],
   imports: [
     BrowserModule,

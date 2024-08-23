@@ -1,6 +1,10 @@
 <body>
     <nav class="header">
         <h1 class="heading">Student Teacher Data Portal</h1>
+        <div class="buttons">
+            <button mat-button class="button" [routerLink]="['/student']">Student</button>
+            <button mat-button class="button" [routerLink]="['/teacher']">Teacher</button>
+        </div>
     </nav>
     <div class="body">
         <h2 class="reg">Registration Form</h2>
@@ -38,7 +42,7 @@
                         </mat-radio-group>
                 </div>
                 <div class="label-2">
-                    <button mat-button class="button" type="submit">Submit</button>
+                    <button mat-button class="button-1" type="submit">Submit</button>
                 </div>
             </div>
         </form>

@@ -1,3 +1,18 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "f8c7",
+      "name": "Vikas",
+      "email": "vikas@qwe.com",
+      "address": "Jamshedpur",
+      "role": "Teacher"
+    },
+    {
+      "id": "60f2",
+      "name": "Binod",
+      "email": "binod@poi.com",
+      "address": "Delhi",
+      "role": "Teacher"
+    }
+  ]
 }

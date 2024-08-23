@@ -2,6 +2,7 @@
 .header {
     height: 60px;
     background-color: pink;
+    display: flex;
 }
 
 .heading {
@@ -71,9 +72,20 @@
 }
 .button{
     cursor: pointer;
+    width: 70px;
+    margin-left: 20px;
     height: 30px;
+}
+.button-1{
+    cursor: pointer;
+    height: 30px;
+    margin-bottom: 8px;
 }
 .label-1{
     margin-top: 10px;
     margin-right: 10px;
+}
+.buttons{
+    margin-left: 665.3px;
+    margin-top: 15px;
 }
