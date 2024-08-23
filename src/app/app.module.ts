@@ -13,6 +13,8 @@ import { StudentComponent } from './student/student.component';
 import { TeacherComponent } from './teacher/teacher.component'; 
 import { MatCard, MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { TeacherDetailsComponent } from './teacher-details/teacher-details.component';
 
 
 
@@ -22,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     DetailsComponent,
     StudentComponent,
-    TeacherComponent
+    TeacherComponent,
+    StudentDetailsComponent,
+    TeacherDetailsComponent
   ],
   imports: [
     BrowserModule,

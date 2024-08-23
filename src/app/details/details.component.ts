@@ -40,7 +40,7 @@ export class DetailsComponent {
           }
         })
       }
-      window.location.href=('home/student');
+      window.location.href=('student/student-details');
 
     } else {
       console.log('Form is invalid.')

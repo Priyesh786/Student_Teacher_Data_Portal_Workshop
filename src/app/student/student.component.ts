@@ -6,27 +6,6 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./student.component.scss']
 })
 export class StudentComponent {
-  studentsList: any[] = [];
-
-  constructor(private httpService: UserService) { }
-  ngOnInit(): void {
-    this.httpService.getStudents().subscribe({
-      next: (res: any) => {
-        this.studentsList = res;
-      }, error: (e:any) => {
-        console.log("error", e);
-      }
-   })
-  }
-  deleteStudent(id:number):void {
-    this.httpService.deleteStudents(id).subscribe({
-      next : (res:any) => {
-        console.log("Student successfully deleted.");
-        window.location.href = 'home/student'
-      }, error : (e:any)=>{
-        console.log("Error in deleting", e);
-      }
-    })
-  }
+ 
 }
 

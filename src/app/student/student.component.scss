@@ -6,6 +6,7 @@
 
 .heading {
     padding-top: 15px;
+    text-align: center;
     margin-left: 55px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -48,38 +49,4 @@
     margin-left: 140px;
     margin-top: 15px;
 }
-.card{
-    margin-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;   
-}
-.example-card{
-    border: 1.5px groove;
-    border-radius: 0.5rem;
-    margin-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 250px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    height:max-content;
-    padding-bottom: 15px;
-    overflow-y: auto;
-    overflow-x: auto;
-    background-color: rgb(252, 161, 176);
-}
-.card-content {
-    margin-left: 10px;
-}
-.heading{
-    // margin-left: 40px;
-    // margin-right: 40px;
-    text-align: center;
-}
-.example-card-footer{
-    margin-left: 100px;
-}
-.but {
-    cursor: pointer;
-}
+
